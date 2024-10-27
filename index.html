@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    </head>
+	<link rel="stylesheet" href="styles.css">
+    <body>
+		<nav class="navbar">
+			<ul>
+				<li class="logo"><a href="index.html">Wen Chen<span class="period">.</span></a></li>
+				<li class="about"><a href="aboutpage.html">About</a></li>
+				<li class="projects"><a href="projectpage.html">Projects</a>
+				<li class="contact"><a href="contactpage.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="animation">
+		<div class="background-typewriter"></div>
+		<div class="background-typewriter2"></div>
+		<div class="details">1</div>
+		<div class="typewriter-text">
+			<h1 class="double-slash">//</h1>
+			<h1 class="special">
+				<a href="" class="typewrite" data-period="5000" data-type='[ "Hi, I&apos;m Wen.", "I&apos;m a Aspiring Programmer", "I&apos;m an Artist"]'>
+					<span class="wrap"></span>
+				</a>
+			</h1>
+		</div>
+		</div>
+		<div class="seperator"></div>
+		<div class="homeContent">
+		<div class="Content">
+			<h1>Wen Chen</h1>
+			<h3>Freshman</h3>
+			<p>I'm a Computer Science Major at WPI, I specialize in java and I make games on the side for fun.</p>
+			<p>In the past few years I was a volunteer and a youth lead at Quincy Asian Resources</p>
+		</div>
+			<div class="skills">
+				<h3>Skills Acquired</h3>
+				<dl>
+					<dt>Communication</dt>
+					<dd>While I was a Youth Lead at QARI we had many discussions, that meant many perspectives to listen to, learn from and consider</dd>
+					<dt>Resilience</dt>
+					<dd>During this time I did public outreach and talking to many unfamiliar people got me to regularly go past my comfort zone. </dd>
+					<dt>Leadership</dt>
+					<dd>I lead and contributed to discussions, I attended events and worked to smooth curbs and make other comfortable</dd>
+					<dt>Time Management</dt>
+					<dd>As a senior you're expected to start lazing around. However for me that was the furthest from the truth. I took the hardest class the school could offer, I participated in events and I started a club. Balancing it with leadership and other afterschool programs was difficult but I managed and grew because of it.</dd>
+					<dt>Java</dt>
+					<dd>In school I took a class and learned Java, I went further and started learning it on my own and created many projects to test and refine my abilities. Right now I'm recreating some of my favorite games like Tick-Tack-Toe, Blackjack and Hangman</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="bottom-bar">
+		<table>
+			<tr>
+				<td class="n1">Wen Chen</td>
+			</tr>
+			<tr align="right">
+				<th><a href="https://www.linkedin.com/in/wen-hao-chen/"><img src="images/LinkedIn.png" alt="LinkedIn"></a></th>
+				<th><a href="mailto:wenchen0275@gmail.com"><button class="copy-button" onclick="copyToClipboard()"><img src="images/Gmail.png" alt="Gmail"></button></a></th>
+			</tr >
+			<tr class="copyright" align="right">
+				<th>© 2024 Wen Chen</th>
+			</tr>
+		</table>
+		</div>
+		<script src="testjavascript.js"></script>
+		<script>
+			function copyToClipboard() {
+				const text = "wenchen0275@gmail.com";
+
+				navigator.clipboard.writeText(text).then(function() {
+					alert('Text copied to clipboard!');
+				}, function(err) {
+					console.error('Failed to copy text: ', err);
+				});
+			}
+		</script>
+    </body>
+</html>

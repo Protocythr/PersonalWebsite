@@ -1,0 +1,295 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: orange;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use Flexbox to align items horizontally */
+}
+
+.navbar li {
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    border: none; /* Remove border */
+}
+
+.navbar a {
+    display: block; /* Ensure anchor tag fills the list item */
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center; /* Center text */
+}
+
+/* Navbar Link Hover Effect */
+.navbar a::after {
+    content: '';
+    position: absolute; /* Position the line absolutely within the link */
+    bottom: -2px; /* Position the line just below the text */
+    left: 0; /* Align the line to the left edge of the link */
+    width: 100%; /* Make the line span the full width of the link */
+    height: 2px; /* Thickness of the line */
+    background: #c8deff; /* Line color */
+    transform: scaleX(0); /* Initially hide the line */
+    transform-origin: bottom right; /* Transform from the right side for scaling */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.navbar a + a {
+    margin-left: 10px; /* Add space between links */
+}
+
+/* Individual Navbar Item Styles */
+.logo {
+    width: 25%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #060f13;
+}
+
+.logo .period {
+    color: red; /* Ensure the period is red */
+    z-index: 10;
+}
+
+.logo a:hover::after {
+    transform: scaleX(1); /* Show the line on hover */
+}
+
+.about {
+    width: 15%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #023b45;
+}
+
+.about a:hover::after {
+    transform: scaleX(0.75); /* Show the line on hover */
+}
+
+.projects {
+    width: 35%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #036871;
+}
+
+.projects a:hover::after {
+    transform: scaleX(0.6); /* Show the line on hover */
+}
+
+.contact {
+    width: 25%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #008c8a;
+}
+
+.contact a:hover::after {
+    transform: scaleX(0.25); /* Show the line on hover */
+}
+
+/* Typography and Other Styles */
+li {
+    font-family: "DejaVu Sans Mono", monospace;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.animation {
+	margin-top: 127px;
+}
+
+.typewriter-text {
+    position: absolute;
+    background-color: #16181d;
+    text-align: center;
+    padding: 10em;
+    margin-left: 100px; /* Adjust this value as per your requirement */
+    font-family: "DejaVu Sans Mono", monospace; /* Set font family */
+    z-index: -1;
+}
+
+.typewriter-text .special a {
+    color: #628351; /* Adjust the color as per your preference */
+    text-decoration: none; /* Optional: Remove underlines */
+    z-index: -1;
+}
+
+.typewriter-text h1 {
+    margin-top: 100px;
+    font-family: "DejaVu Sans Mono", monospace;
+    font-weight: bold;
+    text-align: center;
+    color: #628351;
+}
+
+.double-slash {
+    position: absolute;
+    color: #628351;
+    margin-left: -40px;
+    z-index: 0;
+}
+
+.background-typewriter {
+    position: absolute;
+    width: 140px;
+    height: 876px;
+    margin-top: -50px;
+    margin-left: -1px;
+    background-color: #242424;
+    z-index: 1;
+}
+
+.background-typewriter2 {
+    position: absolute;
+    width: 100%;
+    height: 876px;
+    margin-top: -50px;
+    margin-left: 0px;
+    background-color: #16181d;
+    z-index: -12;
+}
+
+.details {
+    position: absolute;
+    margin-top: 260px;
+    color: #75777a;
+    font-family: "DejaVu Sans Mono", monospace; /* Set font family */
+    margin-left: 170px;
+    font-size: 31px;
+    z-index: 0;
+}
+
+body .seperator {
+	position: absolute;
+	margin-top: 826px;
+	width: 100%;
+	height: 50px;
+	background-color: #32485e;
+}
+
+.homeContent {
+    padding-top: 886px; /* Ensure content starts below the fixed element */
+    width: 100%;
+    color: black;
+    text-align: left;
+    font-style: normal;
+	margin-left: 40px;
+	font-family: "sans-serif", sans-serif;
+	margin-bottom: 100px;
+	max-width: 80%;
+}
+
+.homeContent h1 {
+	font-family: "Nunito Sans", sans-serif;
+	border-bottom: 5px solid #153f66; /* Adjust color and thickness as needed */
+	max-width: 200px;
+	margin-bottom: 50px;
+}
+
+.homeContent p {
+	margin-left: 10px;
+	font-size: 15px;
+	max-width: 70%;
+}
+
+.homeContent .skills {
+	margin-top: 50px;
+}
+
+.homeContent dt {
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.homeContent dd {
+	margin-top: 10px;
+	font-style: italic;
+	width: 50%;
+}
+
+/* bottom bar*/
+
+.nunito-sans-<uniquifier> {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bottom-bar {
+	margin-bottom: 0px;
+	background: #117c6f;
+}
+
+.bottom-bar table {
+	list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: 10px;
+	width: fit-content;
+	padding-top: 0.5%;
+}
+
+.bottom-bar th {
+	display: inline;
+	margin-left: 10px;
+}
+
+.bottom-bar td {
+	text-align: center;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+.n1 {
+	font-size: 30px;
+}
+
+.copyright th {
+	font-style: none;
+	font-weight: normal;
+	font-size: 10px;
+	color: #222222;
+	padding-right: 10px;
+}
+
+.bottom-bar img {
+	max-width: 40px;
+	max-height: 40px;
+}
+
+.copy-button {
+	background: none;
+	border: none;
+}

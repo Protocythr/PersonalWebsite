@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects</title>
+    </head>
+	<link rel="stylesheet" href="projectpagestyles.css">
+    <body>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mooli&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+		<nav class="navbar">
+			<ul>
+				<li class="logo"><a href="index.html">Wen Chen<span class="period">.</span></a>
+				<li class="about"><a href="aboutpage.html">About</a>
+				<li class="projects"><a href="projectpage.html">Projects</a>
+				<li class="contact"><a href="contactpage.html">Contact</a></li>
+			</ul>
+		</nav>
+		
+		
+		
+		<div class="maincontent">
+		<h1>Projects</h1>
+		<p>These are personal projects I made to showcase and further my abilities</p>
+		<p>These are all just console projects and will not have any visuals</p>
+			<table>
+				<ul>
+					<li><p>Tic-Tac-Toe</p></li>
+					<div class="link">
+						<li><a href="projectfiles/tic-tac-toe.zip" download>Download Tic-Tac-Toe</a></li>
+					</div>
+					<li><p>Hangman</p></li>
+					<div class="link">
+						<li><a href="projectfiles/Hangman.zip" download>Download Hangman</a></li>
+					</div>
+					<li><p>Black Jack</p></li>
+					<div class="link">
+						<li><a href="projectfiles/blackjack.zip" download>Download Black Jack</a></li>
+					</div>
+				</ul>
+			</table>
+			<img id="img1" src="images/code.jpg">
+			<img id="img2" src="images/code2.png">
+		</div>
+		
+		
+		<div class="bottom-bar">
+			<table>
+				<tr>
+					<td class="n1">Wen Chen</td>
+				</tr>
+				<tr align="right">
+					<th><a href="https://www.linkedin.com/in/wen-hao-chen/"><img src="images/LinkedIn.png" alt="LinkedIn"></a></th>
+					<th><a href="mailto:wenchen0275@gmail.com"><button class="copy-button" onclick="copyToClipboard()"><img src="images/Gmail.png" alt="Gmail"></button></a></th>
+				</tr >
+				<tr class="copyright" align="right">
+					<th>© 2024 Wen Chen</th>
+				</tr>
+			</table>
+		</div>
+	<script>
+		function copyToClipboard() {
+			const text = "wenchen0275@gmail.com";
+		navigator.clipboard.writeText(text).then(function() {
+				alert('Text copied to clipboard!');
+			}, function(err) {
+				console.error('Failed to copy text: ', err);
+			});
+		}
+	</script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Me</title>
+    </head>
+	<link rel="stylesheet" href="contactpagestyles.css">
+    <body>
+		<nav class="navbar">
+			<ul>
+				<li class="logo"><a href="index.html">Wen Chen<span class="period">.</span></a>
+				<li class="about"><a href="aboutpage.html">About</a>
+				<li class="projects"><a href="projectpage.html">Projects</a>
+				<li class="contact"><a href="contactpage.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="allcontent">
+			<video autoplay muted loop src="nightcars.mp4" width=50%>
+				<source src="nightcars.mp4">
+			</video>
+			<h1>Contact Me</h1>
+			<ul>
+				<li align="left" id="det">Contact Details</li>
+				<li>
+				<div class="tooltip">
+					<div id="phone-tooltip">
+					<div id="hitbox">
+					</div>
+					<div class="deco-text">
+						<p>Phone Number</p>
+					</div>
+					<div class="test">
+						<p></p>
+					</div>
+					<span class="tooltiptext">
+						<p>(857)-210-5073</p>
+					</span>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="tooltip">
+					<div id="email-tooltip">
+					<div id="hitbox">
+					</div>
+					<div class="deco-text">
+						<p>Email Address</p>
+					</div>
+					<div class="test">
+						<p></p>
+					</div>
+					<span class="tooltiptext">
+						<p>whchen@wpi.edu</p>
+					</span>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="tooltip">
+					<div id="address-tooltip">
+					<div id="hitbox">
+					</div>
+					<div class="deco-text">
+						<p>Address</p>
+					</div>
+					<div class="test">
+						<p></p>
+					</div>
+					<span class="tooltiptext">
+						<p>216 Quincy Ave, Quincy MA 02111</p>
+					</span>
+					</div>
+				</div>
+				</li>
+			</ul>
+		</div>
+		
+	<div class="bottom-bar">
+		<table>
+			<tr>
+				<td class="n1">Wen Chen</td>
+			</tr>
+			<tr align="right">
+				<th><a href="https://www.linkedin.com/in/wen-hao-chen/"><img src="images/LinkedIn.png" alt="LinkedIn"></a></th>
+				<th><a href="mailto:wenchen0275@gmail.com"><button class="copy-button" onclick="copyToClipboard()"><img src="images/Gmail.png" alt="Gmail"></button></a></th>
+			</tr >
+			<tr class="copyright" align="right">
+				<th>© 2024 Wen Chen</th>
+			</tr>
+		</table>
+	</div>
+	<script>
+		function copyToClipboard() {
+			const text = "wenchen0275@gmail.com";
+		navigator.clipboard.writeText(text).then(function() {
+				alert('Text copied to clipboard!');
+			}, function(err) {
+				console.error('Failed to copy text: ', err);
+			});
+		}
+	</script>
+    </body>
+</html>
